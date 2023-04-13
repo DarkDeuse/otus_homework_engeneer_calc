@@ -6,9 +6,8 @@
 
 class Variable : public ASTNode {
   public:
-    Variable(std::string variable)
-        : ASTNode(std::string(variable))
-        , variable_(variable) {}
+    Variable(const std::string &variable)
+        : ASTNode(std::string(variable)){}
 
     std::string value() const { return variable_; }
 

@@ -14,7 +14,7 @@ class Parser {
 
     Parser &operator=(const Parser &other) = delete;
 
-    ~Parser() = default;
+    virtual ~Parser() = default;
 
     ASTNode *parse();
 
